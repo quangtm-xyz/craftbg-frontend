@@ -14,6 +14,10 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         title: t['seo.title'],
         description: t['seo.description'],
         metadataBase: new URL('https://craftbg.click'),
+        icons: {
+            icon: '/favicon.ico',
+            apple: '/favicon.jpg',
+        },
         alternates: {
             canonical: `/${lang}`,
             languages: {

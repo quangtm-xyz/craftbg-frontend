@@ -2,7 +2,11 @@ import './globals.css'
 
 export const metadata = {
     title: 'CraftBG - AI Background Remover',
-    description: 'Remove image backgrounds instantly with AI - 100% Free'
+    description: 'Remove image backgrounds instantly with AI - 100% Free',
+    icons: {
+        icon: '/favicon.ico',
+        apple: '/favicon.jpg',
+    }
 }
 
 export default function RootLayout({
