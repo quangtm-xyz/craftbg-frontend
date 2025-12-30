@@ -35,7 +35,7 @@ npm run build
 
 **Output Directory:** 
 ```
-out
+(leave empty - Vercel auto-detects .next)
 ```
 
 **Install Command:**
@@ -125,11 +125,13 @@ The project includes `next.config.mjs` with optimal settings:
 ```javascript
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',           // Static export
-  images: { unoptimized: true }, // Required for static export
+  // No 'output: export' - Vercel deploys Next.js natively
+  images: { unoptimized: true }, // For compatibility
   trailingSlash: true,        // SEO-friendly URLs
 }
 ```
+
+> ✅ **Note:** Vercel automatically handles Next.js builds. No static export needed.
 
 ---
 
